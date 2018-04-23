@@ -6,15 +6,18 @@ from random import randint
 
 N = randint(8,20)
 W = randint(3,15)
-D = W*2
+D = 2*W
 
-red = randint(0,N)
-green = N-red
+for i in range(0,N):
+    red = randint(0,N)
+    green = N-red
+    
+    Pr = (red/N)
+    Pg = (green/N)
+    
+    print((Pr*W)-(Pg*(D-W)))
+    
 
-print(red/N)
-print(green/N)
-print(N)
-print(D)
 
 '''
 N = int(input("Please enter a total amount of marbles (N value) between 8 and 20: "))
