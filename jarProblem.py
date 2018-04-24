@@ -6,18 +6,19 @@ from random import randint
 
 N = randint(8,20)
 W = randint(3,15)
-D = 2*W
+D = .5*W
 
-for i in range(0,N):
-    red = randint(0,N)
-    green = N-red
-    
-    Pr = (red/N)
-    Pg = (green/N)
-    
-    print((Pr*W)-(Pg*(D-W)))
-    
+red = randint(0,N)
+green = N-red
+num = randint(0,N)
 
+if num >= red:
+    print("Red ball is picked: ")
+    print(red)
+    print(num)
+    
+    
+#list of 10 values (r or g) then gen a random number/value if that is an r or g you win or lose
 
 '''
 N = int(input("Please enter a total amount of marbles (N value) between 8 and 20: "))
