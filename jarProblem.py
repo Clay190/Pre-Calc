@@ -4,25 +4,15 @@
 
 from random import randint
 
-N = randint(8,20)
-W = randint(3,15)
-D = .5*W
+N = 10
+W = 8
+RUNS = 1000
 
-red = randint(0,N)
-green = N-red
-num = randint(0,N)
+total = 0
 
-if num >= red:
-    print("Red ball is picked: ")
-    print(red)
-    print(num)
-    
-    
-#list of 10 values (r or g) then gen a random number/value if that is an r or g you win or lose
+for i in range(0,RUNS):
+    green = randint(0,N)
+    red = 1-green
+    total += ((green/N)**2+(red/N)**2)
 
-'''
-N = int(input("Please enter a total amount of marbles (N value) between 8 and 20: "))
-W = int(input("Please enter the money made when correct guess (W value) between 3 and 15: "))
-D = W*2
-print(D)
-'''
+print(total/RUNS)
