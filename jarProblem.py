@@ -18,6 +18,7 @@ for i in range(0,RUNS):
     green = N-red
     total += (red/N)
 
+D = (total/RUNS)*W
 print(total/RUNS)
 
 #2a)
@@ -34,6 +35,7 @@ for i in range(0,RUNS):
     red = N-green
     total += (green/N)
 
+D = (total/RUNS)*W
 print(total/RUNS)
 
 #3a)
@@ -70,6 +72,11 @@ for i in range(0,RUNS):
     Pg = green/N
     p1 = Pr**2
     p2 = Pg**2
+    p3 = Pg*Pr*Pr*Pr
+    p4 = Pg*Pr*Pg*Pg
+    p5 = Pr*Pg*Pr*Pr
+    p6 = Pr*Pg*Pg*Pg
+    
     
     
     print(p1+p2+p3+p4+p5+p6)
