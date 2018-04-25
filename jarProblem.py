@@ -54,7 +54,6 @@ for i in range(0,RUNS):
 
 print(total/RUNS)
 
-'''
 
 #4a)
 from random import randint
@@ -80,5 +79,28 @@ for i in range(0,RUNS):
     
 print(total/RUNS)
 
+'''
 
+#5a)
+
+from random import randint
+
+N = 10
+W = 8
+RUNS = 10
+
+total = 0
+
+for i in range(0,RUNS):
+    green = randint(0,N)
+    red = N-green
+    p1 = (red/N)*((red-1)/(N-1))*((red-2)/(N-2))
+    p2 = (green/N)*((green-1)/(N-1))*((green-2)/(N-2))
+    p3 = (green/N)*((red)/(N-1))*((green-1)/(N-2))*((green-2)/(N-3))
+    p4 = (green/N)*((red)/(N-1))*((red-1)/(N-2))*((red-2)/(N-3))
+    p5 = (red/N)*((green)/(N-1))*((green-1)/(N-2))*((green-2)/(N-3))
+    p6 = (red/N)*((green)/(N-1))*((red-1)/(N-2))*((red-2)/(N-3))
+    total += p1+p2+p3+p4+p5+p6
+    
+print(total/RUNS)
 
