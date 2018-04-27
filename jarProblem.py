@@ -34,5 +34,7 @@ for i in range(0,RUNS):
 D = (total1/RUNS)*W
 D2 = (total2/RUNS)*W
 print("Senerio 1", total1/RUNS)
-
-    
+print("Senerio 2", total2/RUNS)
+print("Senerio 3", total3/RUNS)
+print("Senerio 4", total4/RUNS)
+print("Senerio 5", total5/RUNS)
