@@ -22,7 +22,7 @@ for i in range(0,RUNS):
     total1 += Pr
     total2 += Pg
     total3 += ((Pg)**2+(Pr)**2)
-    total4 += (Pr*Pr*Pr) + (Pg*Pg*Pg)+(Pg*Pr*Pr*Pr)+(Pg*Pr*Pg*Pg)+(Pr*Pg*Pr*Pr)+(Pr*Pg*Pg*Pg)
+    total4 += (Pr**3) + (Pg**3)+(Pg*Pr*Pr*Pr)+(Pg*Pr*Pg*Pg)+(Pr*Pg*Pr*Pr)+(Pr*Pg*Pg*Pg)
     p1 = (red/N)*((red-1)/(N-1))*((red-2)/(N-2))
     p2 = (green/N)*((green-1)/(N-1))*((green-2)/(N-2))
     p3 = (green/N)*((red)/(N-1))*((green-1)/(N-2))*((green-2)/(N-3))
