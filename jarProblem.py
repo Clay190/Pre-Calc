@@ -23,12 +23,12 @@ for i in range(0,RUNS):
     total2 += Pg
     total3 += ((Pg)**2+(Pr)**2)
     total4 += (Pr**3) + (Pg**3)+(Pg*Pr*Pr*Pr)+(Pg*Pr*Pg*Pg)+(Pr*Pg*Pr*Pr)+(Pr*Pg*Pg*Pg)
-    p1 = (red/N)*((red-1)/(N-1))*((red-2)/(N-2))
-    p2 = (green/N)*((green-1)/(N-1))*((green-2)/(N-2))
-    p3 = (green/N)*((red)/(N-1))*((green-1)/(N-2))*((green-2)/(N-3))
-    p4 = (green/N)*((red)/(N-1))*((red-1)/(N-2))*((red-2)/(N-3))
-    p5 = (red/N)*((green)/(N-1))*((green-1)/(N-2))*((green-2)/(N-3))
-    p6 = (red/N)*((green)/(N-1))*((red-1)/(N-2))*((red-2)/(N-3))
+    p1 = (red/N)*((red-1)/(N-1))*((red)/(N))
+    p2 = (green/N)*((green-1)/(N-1))*((green)/(N))
+    p3 = (green/N)*((red)/(N-1))*((green-1)/(N-2))*((green)/(N))
+    p4 = (green/N)*((red)/(N-1))*((red-1)/(N-2))*((red)/(N))
+    p5 = (red/N)*((green)/(N-1))*((green-1)/(N-2))*((green)/(N))
+    p6 = (red/N)*((green)/(N-1))*((red-1)/(N-2))*((red)/(N))
     total5 += p1+p2+p3+p4+p5+p6
 
 D1 = (total1/RUNS)*W
