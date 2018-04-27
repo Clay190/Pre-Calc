@@ -37,13 +37,13 @@ P = (total3/RUNS)*W-D1
 R = ((total4/RUNS)*W)-D1
 S = ((total5/RUNS)*W)-D1
 
-print("Senerio 1:", total1/RUNS)
-print("D for senerio 1 is", D1)
-print("Senerio 2:", total2/RUNS)
-print("D for senerio 2 is", D2)
-print("Senerio 3:", total3/RUNS)
-print("P for senerio 3 is", S)
-print("Senerio 4:", total4/RUNS)
-print("R for senerio 4 is", R)
-print("Senerio 5:", total5/RUNS)
-print("S for senerio 5 is", S)
+print("Scenerio 1:", total1/RUNS)
+print("D for scenerio 1 is", D1)
+print("Scenerio 2:", total2/RUNS)
+print("D for scenerio 2 is", D2)
+print("Scenerio 3:", total3/RUNS)
+print("P for cenerio 3 is", S)
+print("Scenerio 4:", total4/RUNS)
+print("R for scenerio 4 is", R)
+print("Scenerio 5:", total5/RUNS)
+print("S for scenerio 5 is", S)
